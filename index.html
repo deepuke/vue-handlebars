@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <!-- <script src="node_modules/handlebars/dist/handlebars.runtime.js"></script>
+    <script src="js/templates/templates.js"></script> -->
+</head>
+
+<body>
+    <div class="container" id="app">
+        <!-- <h1>Handlebarjs Demo App</h1>
+        <div class="row">
+            <div class="col-sm-12" id="bookList">
+                Books...
+            </div>
+        </div> -->
+
+
+        <h1>{{ message }}</h1>
+        <ul>
+            <todo-item 
+                v-for="item in groceryList" 
+                v-bind:todo="item" 
+                v-bind:key="item.id"></todo-item>
+        </ul>
+
+    </div>
+    <!-- <script src="main.js"></script> -->
+
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "handlebarsjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "dev": "lite-server -c configs/bs-config.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.12",
+    "jquery": "^3.3.1",
+    "vue": "^2.5.17"
+  }
+}
